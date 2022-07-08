@@ -1,0 +1,82 @@
+@font-face {
+  font-family: roboto-regular;
+  src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+
+*{
+  font-family: 'roboto-regular';
+}
+
+body{
+  margin: 10px;
+  background-image: url('../assets/images/weatherBackgorund.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+}
+
+input{
+  padding: 5px;
+  font-size: 22px;
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+  height: 40px;
+  color: #ffffff;
+  background-color: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+input:focus{
+  outline: none;
+}
+
+::placeholder{
+  color: rgb(240, 240, 240);
+}
+
+.bottomInfos{
+  width: 60vh;
+  height: auto;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 70%);
+}
+
+.additionalInformation{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.primaryInfo{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.locationName{
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.temperature{
+  margin: 10px;
+  font-size: 90px;
+  font-weight: bold;
+}
